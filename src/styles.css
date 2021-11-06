@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+ul {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 3px 4px 14px 0 rgba(0,0,0,0.39);
+}
+
+li {
+    padding: 15px;
+    margin: 10px;
+    font-size: 1rem;
+    font-style: italic;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+li>button {
+    border : none;
+    background-color: none;
+    font-size: 1rem;
+    float: right;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+li>button:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#modal {
+    text-align:left;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+}
+
+input {
+    width: 100%;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 1.2rem;
+}
+
+.danger {
+    color:#ff0000;
+    font-weight:bold;
+    padding: 5px;
+    margin-top: 10px;
+
+}
