@@ -13,9 +13,12 @@ body{
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+
 button {
     cursor: pointer;
     font-family: 'Mochiy Pop One', sans-serif;
+    border-radius:  10px;
 }
 
 ul {
@@ -24,7 +27,7 @@ ul {
     padding: 10px;
     list-style: none;
     border-radius: 10px;
-    box-shadow: 3px 4px 14px 0 rgba(0,0,0,0.39);
+    box-shadow: 1px 1px 8px 0 rgba(0,0,0,0.39);
 }
 
 li {
@@ -37,11 +40,12 @@ li {
 
 li>button {
     border : none;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1rem;
     float: right;
     opacity: 0.6;
     transition: 1s;
+    margin-left: 5px;
 }
 
 li>button:hover {
@@ -49,21 +53,35 @@ li>button:hover {
     transition: opacity 1s;
 }
 
+button .icon {
+    font-size: 1.75rem;
+    
+}
+
+fieldset {
+    border-radius: 5px;
+    border: none;
+}
+
 #modal {
     text-align:left;
     margin: 10px;
     padding: 10px;
     list-style: none;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.185);
     border-radius: 10px;
-    box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.39);
 }
 
 input {
-    width: 100%;
+    width: 98%;
+    border: 1px solid grey;
+    border-radius: 3px;
     line-height: 50px;
     text-indent: 10px;
     font-size: 1.2rem;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.185);
 }
 
 .danger {
@@ -71,5 +89,24 @@ input {
     font-weight:bold;
     padding: 5px;
     margin-top: 10px;
+    font-size: 0.5rem;
 
+}
+
+li>span.risc {
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.3)
+}
+
+.green {
+    color: rgba(0, 128, 0, 0.705);
+}
+
+.red {
+    color: rgba(255, 57, 57, 0.938);
+}
+
+.beaty {
+    background-color: #8dd2ee;
+    padding: 10px;
 }

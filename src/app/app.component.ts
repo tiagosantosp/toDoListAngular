@@ -55,7 +55,7 @@ export class AppComponent {
   // Marcar tarefa como concluida
   markAsDone(todo: Todo) {
     todo.done = true
-
+    return true
     this.save()
   }
 
